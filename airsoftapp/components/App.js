@@ -6,7 +6,7 @@ import {View, Text, StyleSheet} from 'react-native';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>App</Text>
+      <Text>Welcome to Plink. The mobile app for Airsoft Players and field owners.</Text>
     </View>
   );
 };
