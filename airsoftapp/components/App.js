@@ -1,17 +1,27 @@
 //import liraries
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import LoginForm from './LoginForm';
+import Articles from './Articles';
+import Logo from './Logo';
 
 // create a component
 class App extends Component {
+  //create state for logged in status - current state is set to false
+  state = {
+    loggedIn: false,
+  };
+  //if not logged in return loginform component, loggedin return Articles component
+  renderContent = () => {
+    switch (this.state.loggedIn) {
+      case false:
+        return <LoginForm />;
+      case true:
+        return <Articles />;
+    }
+  };
   render() {
-    return (
-      <View style={styles.container}>
-        <Text>
-          Welcome to Plink. The mobile app for Airsoft Players and field owners.
-        </Text>
-      </View>
-    );
+    return <View style={styles.container}>{this.renderContent()}</View>;
   }
 }
 
