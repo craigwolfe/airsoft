@@ -1,6 +1,6 @@
 //import liraries
 import React, {Component} from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
 import Logo from './Logo';
 import EmailAndPassword from './EmailAndPassword';
 
@@ -13,7 +13,14 @@ const LoginForm = () => {
       </View>
       <View style={styles.emailAndPassword}>
         <EmailAndPassword />
+
+        <TouchableOpacity style={styles.linkContainer}>
+          <Text style={styles.alreadyLoginText}>
+            Don't have an account? Sign Up
+          </Text>
+        </TouchableOpacity>
       </View>
+      <View />
     </View>
   );
 };
@@ -31,6 +38,10 @@ const styles = StyleSheet.create({
   },
   emailAndPassword: {
     flex: 2,
+  },
+  linkContainer: {
+    flex: 2,
+    alignSelf: 'center',
   },
 });
 

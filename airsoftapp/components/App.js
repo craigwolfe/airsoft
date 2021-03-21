@@ -5,7 +5,6 @@ import {View, StyleSheet} from 'react-native';
 import LoginForm from './LoginForm';
 import Articles from './Articles';
 import Loading from './Loading';
-//above image is background image of login screen
 
 // create a component
 class App extends Component {
