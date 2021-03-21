@@ -1,6 +1,6 @@
 //import liraries
-import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React, {Component} from 'react';
+import {View, StyleSheet} from 'react-native';
 import Logo from './Logo';
 import EmailAndPassword from './EmailAndPassword';
 
@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
   },
   emailAndPassword: {
     flex: 2,
-    justifyContent: 'center',
   },
 });
 
