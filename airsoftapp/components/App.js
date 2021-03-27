@@ -17,14 +17,8 @@ class App extends Component {
     // web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     var firebaseConfig = {
-      apiKey: 'AIzaSyB2IuCjDxWxaNvOt2zdUbbXzxL8Gp8sk80',
-      authDomain: 'airsoft-app-37d5b.firebaseapp.com',
-      databaseURL: 'https://airsoft-app-37d5b-default-rtdb.firebaseio.com',
-      projectId: 'airsoft-app-37d5b',
-      storageBucket: 'airsoft-app-37d5b.appspot.com',
-      messagingSenderId: '52995122493',
-      appId: '1:52995122493:web:35de99d160ba87727fd154',
-      measurementId: 'G-LZZDTDND6Q',
+      
+      
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
