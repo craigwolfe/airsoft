@@ -18,7 +18,7 @@ class App extends Component {
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
       
-      
+      //api key
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
